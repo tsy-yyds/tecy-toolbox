@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>多功能实用工具箱 · tsy-yyds</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231d1d1f'/%3E%3Cpath d='M13 6.5a5.5 5.5 0 0 0-5.4 6.6L3 17.7 6.3 21l4.6-4.6a5.5 5.5 0 0 0 6.6-5.4L13 15l-3.5-3.5L13 6.5z' stroke='%23fff' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei","PingFang SC",sans-serif;color:#1d1d1f;background:#fff;line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:760px;margin:0 auto;padding:0 28px}
+
+header{text-align:center;padding:96px 0 40px}
+h1{font-size:44px;font-weight:700;letter-spacing:-.02em}
+.tagline{margin-top:14px;font-size:17px;color:#86868b}
+.cta{margin-top:28px;display:flex;flex-wrap:wrap;justify-content:center;gap:12px;align-items:center}
+a.btn{display:inline-block;font-size:16px;font-weight:600;color:#fff;background:#0071e3;padding:12px 30px;border-radius:980px;text-decoration:none;transition:background .15s}
+a.btn:hover{background:#0077ed}
+a.link{font-size:15px;color:#0071e3;text-decoration:none}
+a.link:hover{text-decoration:underline}
+
+section{padding:44px 0 8px;border-top:1px solid #d2d2d7}
+section h2{font-size:15px;font-weight:600;color:#86868b;margin-bottom:18px}
+ul.feats{list-style:none;display:flex;flex-wrap:wrap;gap:10px 34px;padding:0}
+ul.feats li{font-size:15px;color:#1d1d1f;padding-left:22px;position:relative}
+ul.feats li::before{content:"";position:absolute;left:2px;top:9px;width:7px;height:7px;border-radius:50%;background:#0071e3}
+
+.dl-row{display:flex;align-items:center;gap:16px;padding:18px 2px;border-bottom:1px solid #e8e8ed}
+.dl-row:last-child{border-bottom:none}
+.dl-info{flex:1;min-width:0}
+.dl-info .n{font-size:15px;font-weight:500;word-break:break-all}
+.dl-info .d{font-size:12.5px;color:#86868b;margin-top:2px}
+.dl-info .s{font-size:13px;color:#86868b;margin-left:8px;white-space:nowrap}
+.dl-ops{flex:none;display:flex;gap:8px;align-items:center}
+a.dl-gh{font-size:13px;font-weight:600;color:#fff;background:#1d1d1f;padding:8px 16px;border-radius:980px;text-decoration:none}
+a.dl-gh:hover{background:#000}
+details.acc{position:relative}
+details.acc summary{font-size:13px;font-weight:600;color:#1d1d1f;border:1px solid #d2d2d7;padding:8px 16px;border-radius:980px;cursor:pointer;list-style:none;user-select:none;text-align:center}
+details.acc summary::-webkit-details-marker{display:none}
+details.acc[open] summary{border-color:#1d1d1f}
+.acc-menu{position:absolute;right:0;top:calc(100% + 6px);min-width:300px;background:#fff;border:1px solid #d2d2d7;border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,.1);z-index:20;padding:8px;text-align:left}
+.acc-menu .lbl{display:block;font-size:11px;color:#86868b;padding:6px 10px 2px}
+.acc-menu a{display:block;font-size:12.5px;color:#515154;text-decoration:none;padding:7px 10px;border-radius:8px;word-break:break-all}
+.acc-menu a:hover{background:#f5f5f7;color:#1d1d1f}
+.note{margin-top:18px;font-size:13px;color:#86868b}
+
+footer{padding:44px 0 60px;border-top:1px solid #d2d2d7;margin-top:48px;color:#86868b;font-size:13px;display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between}
+footer a{color:#1d1d1f;text-decoration:none}
+footer a:hover{text-decoration:underline}
+
+@media (max-width:560px){
+  header{padding:64px 0 32px}
+  h1{font-size:34px}
+  .tagline{font-size:15px}
+  .dl-ops{flex-direction:column;align-items:stretch}
+  .acc-menu{position:static;min-width:0;margin-top:6px}
+}
+</style>
+</head>
+<body>
+
+<header class="wrap">
+  <h1>多功能实用工具箱</h1>
+  <p class="tagline">十余个工具，一站式打包<br>深蓝卡片界面 · 左侧导航 + 右侧内容（仿火绒安全软件）</p>
+  <div class="cta">
+    <a class="btn" href="https://github.com/tsy-yyds/tecy-toolbox/releases/download/v3.0/tecy-toolbox-installer.exe">下载 v3.0 安装版</a>
+    <a class="link" href="https://github.com/tsy-yyds/tecy-toolbox" target="_blank" rel="noopener">GitHub 源码</a>
+  </div>
+</header>
+
+<main class="wrap">
+  <section>
+    <h2>包含工具</h2>
+    <ul class="feats">
+      <li>文件批量重命名</li>
+      <li>图片格式转换</li>
+      <li>二维码生成器</li>
+      <li>8 大类单位换算</li>
+      <li>番茄钟</li>
+      <li>系统信息监控</li>
+      <li>音乐 / 短视频无水印下载</li>
+      <li>PDF 合并 / 拆分 / 转图 / 转 Word</li>
+      <li>文件校验</li>
+      <li>腾讯进程管家</li>
+      <li>游戏空间</li>
+      <li>进程锁定</li>
+      <li>应用包密码工具</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>下载（v3.0 与历史版本）</h2>
+    <div class="dl-row">
+      <div class="dl-info"><div class="n">tecy-toolbox-installer.exe <span class="s">276.3 MB</span></div><div class="d">v3.0 一键安装版（含全部集成工具）</div></div>
+      <div class="dl-ops"><a class="dl-gh" href="https://github.com/tsy-yyds/tecy-toolbox/releases/download/v3.0/tecy-toolbox-installer.exe" target="_blank" rel="noopener">GitHub 下载</a><details class="acc"><summary>国内加速</summary><div class="acc-menu">
+        <span class="lbl">镜像 1 · gh-proxy.com</span><a href="https://gh-proxy.com/https://github.com/tsy-yyds/tecy-toolbox/releases/download/v3.0/tecy-toolbox-installer.exe" target="_blank" rel="noopener">gh-proxy.com 下载</a>
+        <span class="lbl">镜像 2 · ghfast.top</span><a href="https://ghfast.top/https://github.com/tsy-yyds/tecy-toolbox/releases/download/v3.0/tecy-toolbox-installer.exe" target="_blank" rel="noopener">ghfast.top 下载</a>
+        <span class="lbl">镜像 3 · ghproxy.net</span><a href="https://ghproxy.net/https://github.com/tsy-yyds/tecy-toolbox/releases/download/v3.0/tecy-toolbox-installer.exe" target="_blank" rel="noopener">ghproxy.net 下载</a>
+      </div></details></div>
+    </div>
+    <div class="dl-row">
+      <div class="dl-info"><div class="n">tecy-toolbox.zip <span class="s">21.3 MB</span></div><div class="d">v3.0 绿色免安装版</div></div>
+      <div class="dl-ops"><a class="dl-gh" href="https://github.com/tsy-yyds/tecy-toolbox/releases/download/v3.0/tecy-toolbox.zip" target="_blank" rel="noopener">GitHub 下载</a><details class="acc"><summary>国内加速</summary><div class="acc-menu">
+        <span class="lbl">镜像 1 · gh-proxy.com</span><a href="https://gh-proxy.com/https://github.com/tsy-yyds/tecy-toolbox/releases/download/v3.0/tecy-toolbox.zip" target="_blank" rel="noopener">gh-proxy.com 下载</a>
+        <span class="lbl">镜像 2 · ghfast.top</span><a href="https://ghfast.top/https://github.com/tsy-yyds/tecy-toolbox/releases/download/v3.0/tecy-toolbox.zip" target="_blank" rel="noopener">ghfast.top 下载</a>
+        <span class="lbl">镜像 3 · ghproxy.net</span><a href="https://ghproxy.net/https://github.com/tsy-yyds/tecy-toolbox/releases/download/v3.0/tecy-toolbox.zip" target="_blank" rel="noopener">ghproxy.net 下载</a>
+      </div></details></div>
+    </div>
+    <div class="dl-row">
+      <div class="dl-info"><div class="n">tecy-toolbox-full.7z <span class="s">61.8 MB</span></div><div class="d">完整压缩包（含 ffmpeg）</div></div>
+      <div class="dl-ops"><a class="dl-gh" href="https://github.com/tsy-yyds/tecy-toolbox/releases/download/v3.0/tecy-toolbox-full.7z" target="_blank" rel="noopener">GitHub 下载</a><details class="acc"><summary>国内加速</summary><div class="acc-menu">
+        <span class="lbl">镜像 1 · gh-proxy.com</span><a href="https://gh-proxy.com/https://github.com/tsy-yyds/tecy-toolbox/releases/download/v3.0/tecy-toolbox-full.7z" target="_blank" rel="noopener">gh-proxy.com 下载</a>
+        <span class="lbl">镜像 2 · ghfast.top</span><a href="https://ghfast.top/https://github.com/tsy-yyds/tecy-toolbox/releases/download/v3.0/tecy-toolbox-full.7z" target="_blank" rel="noopener">ghfast.top 下载</a>
+        <span class="lbl">镜像 3 · ghproxy.net</span><a href="https://ghproxy.net/https://github.com/tsy-yyds/tecy-toolbox/releases/download/v3.0/tecy-toolbox-full.7z" target="_blank" rel="noopener">ghproxy.net 下载</a>
+      </div></details></div>
+    </div>
+    <div class="dl-row">
+      <div class="dl-info"><div class="n">tecy-toolbox-v2.7.zip <span class="s">21.3 MB</span></div><div class="d">上一版 v2.7 绿色包</div></div>
+      <div class="dl-ops"><a class="dl-gh" href="https://github.com/tsy-yyds/tecy-toolbox/releases/download/v3.0/tecy-toolbox-v2.7.zip" target="_blank" rel="noopener">GitHub 下载</a><details class="acc"><summary>国内加速</summary><div class="acc-menu">
+        <span class="lbl">镜像 1 · gh-proxy.com</span><a href="https://gh-proxy.com/https://github.com/tsy-yyds/tecy-toolbox/releases/download/v3.0/tecy-toolbox-v2.7.zip" target="_blank" rel="noopener">gh-proxy.com 下载</a>
+        <span class="lbl">镜像 2 · ghfast.top</span><a href="https://ghfast.top/https://github.com/tsy-yyds/tecy-toolbox/releases/download/v3.0/tecy-toolbox-v2.7.zip" target="_blank" rel="noopener">ghfast.top 下载</a>
+        <span class="lbl">镜像 3 · ghproxy.net</span><a href="https://ghproxy.net/https://github.com/tsy-yyds/tecy-toolbox/releases/download/v3.0/tecy-toolbox-v2.7.zip" target="_blank" rel="noopener">ghproxy.net 下载</a>
+      </div></details></div>
+    </div>
+    <div class="dl-row">
+      <div class="dl-info"><div class="n">tecy-toolbox-v1.0.zip <span class="s">21.2 MB</span></div><div class="d">历史初版 v1.0</div></div>
+      <div class="dl-ops"><a class="dl-gh" href="https://github.com/tsy-yyds/tecy-toolbox/releases/download/v3.0/tecy-toolbox-v1.0.zip" target="_blank" rel="noopener">GitHub 下载</a><details class="acc"><summary>国内加速</summary><div class="acc-menu">
+        <span class="lbl">镜像 1 · gh-proxy.com</span><a href="https://gh-proxy.com/https://github.com/tsy-yyds/tecy-toolbox/releases/download/v3.0/tecy-toolbox-v1.0.zip" target="_blank" rel="noopener">gh-proxy.com 下载</a>
+        <span class="lbl">镜像 2 · ghfast.top</span><a href="https://ghfast.top/https://github.com/tsy-yyds/tecy-toolbox/releases/download/v3.0/tecy-toolbox-v1.0.zip" target="_blank" rel="noopener">ghfast.top 下载</a>
+        <span class="lbl">镜像 3 · ghproxy.net</span><a href="https://ghproxy.net/https://github.com/tsy-yyds/tecy-toolbox/releases/download/v3.0/tecy-toolbox-v1.0.zip" target="_blank" rel="noopener">ghproxy.net 下载</a>
+      </div></details></div>
+    </div>
+    <div class="dl-row">
+      <div class="dl-info"><div class="n">tecy-toolbox-backup.7z <span class="s">148.8 MB</span></div><div class="d">项目完整备份</div></div>
+      <div class="dl-ops"><a class="dl-gh" href="https://github.com/tsy-yyds/tecy-toolbox/releases/download/v3.0/tecy-toolbox-backup.7z" target="_blank" rel="noopener">GitHub 下载</a><details class="acc"><summary>国内加速</summary><div class="acc-menu">
+        <span class="lbl">镜像 1 · gh-proxy.com</span><a href="https://gh-proxy.com/https://github.com/tsy-yyds/tecy-toolbox/releases/download/v3.0/tecy-toolbox-backup.7z" target="_blank" rel="noopener">gh-proxy.com 下载</a>
+        <span class="lbl">镜像 2 · ghfast.top</span><a href="https://ghfast.top/https://github.com/tsy-yyds/tecy-toolbox/releases/download/v3.0/tecy-toolbox-backup.7z" target="_blank" rel="noopener">ghfast.top 下载</a>
+        <span class="lbl">镜像 3 · ghproxy.net</span><a href="https://ghproxy.net/https://github.com/tsy-yyds/tecy-toolbox/releases/download/v3.0/tecy-toolbox-backup.7z" target="_blank" rel="noopener">ghproxy.net 下载</a>
+      </div></details></div>
+    </div>
+    <p class="note">国内加速为第三方镜像，某个打不开就换一个。主程序源码（main.py + tools/ 全部模块）在仓库 main 分支。v3.0 · 2026-08-26</p>
+  </section>
+</main>
+
+<footer class="wrap">
+  <div>© 2026 tsy-yyds · 多功能实用工具箱</div>
+  <div><a href="https://github.com/tsy-yyds" target="_blank" rel="noopener">GitHub 主页</a> · <a href="https://tsy-yyds.github.io/tecy-project-summary/" target="_blank" rel="noopener">TECY 项目总汇</a></div>
+</footer>
+
+</body>
+</html>
